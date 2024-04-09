@@ -13,7 +13,7 @@ const PriceCard = ({ plan, features }) => {
   }
 
   return (
-    <div className="w-full rounded-2xl bg-slate-500/15 pb-8 pl-6 pt-8 shadow-lg shadow-emerald-300/5 md:lg:h-[75%] lg:pb-0">
+    <div className="w-full rounded-2xl bg-slate-500/15 pb-8 pl-6 pt-8 shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:lg:h-[75%] lg:pb-0">
       <h3 className="pb-5 text-lg font-semibold capitalize">{plan}</h3>
       {features.map((item, index) => (
         <div key={index} className="flex items-center gap-2 pb-[4px]">
@@ -27,7 +27,7 @@ const PriceCard = ({ plan, features }) => {
       ))}
       <div className="mr-6 flex h-full flex-col pt-4">
         <div className="pb-4">
-          <span className=" text-2xl">{monthlyPrice}</span>
+          <span className="text-xl">{monthlyPrice}</span>
           <span className="text-xs"> / Monthly</span>
         </div>
         <button
